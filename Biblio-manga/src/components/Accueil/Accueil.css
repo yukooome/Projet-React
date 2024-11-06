@@ -254,6 +254,7 @@
   /* background-color: aqua; */
   width: 100%;
   height: 90%;
+  cursor: pointer;
 }
 
 .img-actu img {
@@ -321,11 +322,11 @@
   width: 33.33%;
   height: 100%;
   padding-right: 10px;
-  transition: transform 0.3s ease; /* Ajoute une transition douce */
+  transition: transform 0.3s ease; 
 }
 
 .jeux1:hover {
-  transform: scale(1.1); /* Agrandit l'élément de 10% au survol */
+  transform: scale(1.1); 
 }
 
 
@@ -357,31 +358,41 @@
 .jeux2{
   width: 33.33%;
   height: 100%;
+  padding-right: 10px;
+  transition: transform 0.3s ease; /* Ajoute une transition douce */
 
+}
+
+.jeux2:hover {
+  transform: scale(1.1); /* Agrandit l'élément de 10% au survol */
 }
 
 .nb2{
   width: 100%;
   height: 100%;
+  padding-right: 10px;
   background-color: #090426;
-  border-radius: 30px; 
-
+  border-radius: 30px;
+  position: relative; 
   cursor: pointer;
 
   h2{
     color: aliceblue;
     padding: 15px;
   }
+  
 }
 
-/* .image-superposee2 {
+.image-superposee2 {
   position: absolute;
-  top: 77%;
-  left: 50%;
+  top: 47.5%;
+  left: 45%;
   transform: translate(-5%, -50%);
-  width: 22%; 
+  width: 52%; 
   height: auto; 
-} */
+}
+
+
 
 .jeux3{
   width: 33.33%;

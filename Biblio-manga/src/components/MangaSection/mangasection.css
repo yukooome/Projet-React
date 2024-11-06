@@ -9,12 +9,12 @@
     background-color: rgb(9, 4, 38);
     display: flex;
     flex-direction: column;
-    padding: 5vh 0;
+    padding: 4vh 0;
 }
 
 .titre-section-manga {
     width: 100%;
-    height: 5%;
+    height: 7%;
     padding: 0 40px;
     color: white;
 }
@@ -212,6 +212,9 @@
     height: 100%;
     /* background-color: #f39c12;  */
     background-image: url('./src/image/images/lire-bd-japonaises.jpg');
+
+    background-blend-mode: overlay; /* Mélanger l'image et la couleur */
+    background-color: rgba(9, 4, 38, 0.774); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -321,3 +324,8 @@
 
 
   
+
+/* couleur du chargement dans manga-details */
+  .color-charg{
+    color: aliceblue;
+  }

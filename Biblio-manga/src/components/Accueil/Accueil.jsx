@@ -136,7 +136,10 @@ function Accueil() {
               <div className='titre-actu'>
                 <h3>Actualité</h3>
               </div>
-              <div className='img-actu'>
+              <div 
+              // lien fictif
+              onClick={() => window.location.href = 'https://lien-externe.com'}
+              className='img-actu'>
                 <img src="./src/image/images/img-fullperso-actu.jpg" alt="img-fullperso-actu" />
               </div>
             </div>
@@ -148,17 +151,24 @@ function Accueil() {
 
           <div className='bottom-right'>
             <div className='jeux1'>
-              <div className='nb1'>
+              <div 
+              // lien fictif
+              onClick={() => window.location.href = 'https://lien-externe.com'}
+              className='nb1'>
               <h2>Histoire</h2>
                 <img src="./src/image/images/Luffy-Gear-5-One-Piece-removebg-preview.png" alt="Superposition" className="image-superposee" />
               </div>
             </div>
             
             <div className='jeux2'>
-              <div className='nb2'>
+              <div
+              // lien fictif
+              onClick={() => window.location.href = 'https://lien-externe.com'}
+              className='nb2'>
               <h2>Blog</h2>
+              {/* <p>viens decouvrir</p> */}
                 
-              {/* <img src="./src/image/images/nauto-removebg-preview.png" alt="Superposition" className="image-superposee2" /> */}
+              <img src="./src/image/images/nauto-removebg-preview.png" alt="Superposition" className="image-superposee2" />
               </div>
             </div>
             <div className='jeux3'>

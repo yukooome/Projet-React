@@ -32,7 +32,7 @@ function MangaSection() {
     <section>
       <div className='manga'>
         <div className='titre-section-manga'>
-          <p className='underline'>Manga</p>
+          <h2 className='underline'>Manga</h2>
         </div>
 
         <div className="container-search">

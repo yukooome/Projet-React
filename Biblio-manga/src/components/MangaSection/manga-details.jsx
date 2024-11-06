@@ -63,7 +63,7 @@ function MangaDetails({ mangaId }) {
     fetchMangaDetails();
   }, [mangaId]);
 
-  if (loading) return <p>Chargement des détails...</p>;
+  if (loading) return <p className='color-charg'>Chargement des détails...</p>;
   if (error) return <p>{error}</p>;
   if (!mangaDetails) return null;
 
@@ -75,6 +75,7 @@ function MangaDetails({ mangaId }) {
   return (
     <div className="manga-details">
       <div className="details-container">
+      <p>Chargement des détails...</p>
         <img src={mangaDetails.images.jpg.large_image_url} alt={mangaDetails.title} className="manga-image" />
         <div className="details-text">
           <h2>{mangaDetails.title}</h2>
