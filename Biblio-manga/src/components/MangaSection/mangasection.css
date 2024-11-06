@@ -123,6 +123,7 @@
     width: calc(25% - 7.5px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-width: 120px;
+    cursor: pointer;
 }
 
 .manga-item:hover {
@@ -143,56 +144,36 @@
     font-size: 14px;
 }
 
-/* .manga-item button {
-    background-color: #14791B;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 12px;
-}
 
-.manga-item button:hover {
-    background-color: #33a53b;
-}
-
-.manga-item .remove-button {
-    background-color: red;
-}
-
-.manga-item .remove-button:hover {
-    background-color: darkred;
-} */
-
+/* btn aj et supp */
 .btn-add {
-    background-color: green; /* Vert */
-    color: white;            /* Texte en blanc */
-    border: none;           /* Pas de bordure */
-    padding: 8px 16px;      /* Espacement interne */
-    border-radius: 4px;     /* Coins arrondis */
-    cursor: pointer;        /* Curseur pointer au survol */
+    background-color: green; 
+    color: white;           
+    border: none;           
+    padding: 8px 16px;      
+    border-radius: 4px;     
+    cursor: pointer;        
   }
   
   .btn-add:hover {
-    background-color: darkgreen; /* Couleur plus foncée au survol */
+    background-color: darkgreen; 
   }
   
   .btn-remove {
-    background-color: red;       /* Rouge */
-    color: white;                /* Texte en blanc */
-    border: none;                /* Pas de bordure */
-    padding: 8px 16px;          /* Espacement interne */
-    border-radius: 4px;         /* Coins arrondis */
-    cursor: pointer;             /* Curseur pointer au survol */
+    background-color: red;     
+    color: white;              
+    border: none;              
+    padding: 8px 16px;          
+    border-radius: 4px;         
+    cursor: pointer;             
   }
   
   .btn-remove:hover {
-    background-color: darkred;   /* Couleur plus foncée au survol */
+    background-color: darkred;  
   }
   
 
+  /* btn voir plus */
 .load-more-button {
     background-color: #FF9500;
     width: 100%;
@@ -226,25 +207,14 @@
 
 /* details */
 
-/* .container-details {
-    width: 40%; 
-    height: 100%;
-    background-color: #f39c12; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    border-radius: 10px;
-} */
-
 .container-details {
     width: 40%; 
     height: 100%;
-    background-color: #f39c12; /* Couleur de fond de secours si l'image ne charge pas */
-    background-image: url('./src/image/images/sangokubook.png'); /* Remplace par le chemin de ton image */
-    background-size: cover; /* Pour que l'image couvre tout l'élément */
-    background-position: center; /* Pour centrer l'image dans l'élément */
-    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    /* background-color: #f39c12;  */
+    background-image: url('./src/image/images/lire-bd-japonaises.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex; 
     flex-direction: column;
     justify-content: center;
@@ -263,30 +233,28 @@
 }
 
 .details-container {
-    display: flex; /* Utiliser flexbox pour aligner l'image et le texte */
+    display: flex; 
 }
 
 .manga-image {
-    width: 30%;
+    width: 27%;
     /* height: 70%; */
     border-radius: 10px;
-    margin-right: 20px; /* Espacement entre l'image et le texte */
+    margin-right: 20px; 
 }
 
 .details-text {
-    width: 60%; /* Ajustez la largeur de la section de texte */
-    overflow-y: auto; /* Permet le défilement vertical */
-    max-height: 300px; /* Hauteur maximale pour le défilement */
+    width: 60%; 
+    overflow-y: auto; 
+    max-height: 270px; 
 }
 
-
-
-
 .synopsis-container {
-    padding-right: 10px; /* Espacement droit */
+    padding-right: 10px; 
 }
 
 .manga-interaction {
+    height: 57%;
     margin-top: 20px;
     background-color: #111474;
     padding: 20px;
