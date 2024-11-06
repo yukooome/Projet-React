@@ -1,0 +1,80 @@
+
+.first-cont-contact {
+    background-image: url('./src/image/images/img-background-fume.jpg'); /* Chemin d'accès à l'image */
+    background-size: cover; /* Pour couvrir toute la zone du conteneur */
+    background-position: center; /* Pour centrer l'image */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    
+    max-width: 100%;
+    background-color: rgba(9, 4, 38, 0.97);
+
+
+
+    height: 60vh; 
+
+    background-size: cover; /* Pour couvrir toute la div */
+    background-position: center; /* Centrer l'image */
+    background-blend-mode: overlay; /* Mélanger l'image et la couleur */
+    background-color: rgba(9, 4, 38, 0.731); 
+    /* padding: 5vh 0 5vh 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.container-contact {
+    width: 40%;
+    /* height: 90%; */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(9, 4, 38);
+    color: aliceblue;
+  }
+  
+  .title-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group-contact {
+    margin-bottom: 15px;
+  }
+  
+  .label-contact {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-contact,
+  .textarea-contact {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .textarea-contact {
+    height: 100px;
+  }
+  
+  .button-contact {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  

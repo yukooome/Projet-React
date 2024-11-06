@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.manga {
+    height: 100vh;
+    background-color: rgb(9, 4, 38);
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 0;
+}
+
+.titre-section-manga {
+    width: 100%;
+    height: 5%;
+    padding: 0 40px;
+    color: white;
+}
+
+.underline {
+    border-bottom: 3px solid white;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.choice-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 70px;
+    cursor: pointer;
+    border: 1px solid #FF9500;
+    border-radius: 30px;
+    color: #ffffff;
+    height: 30px;
+}
+
+.all-manga-btn, .my-list-btn {
+    background-color: #FF9500;
+}
+
+.all-manga-btn:hover, .my-list-btn:hover {
+    box-shadow: 8px 4px 12px #ffffff9d;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25%;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.search-input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #090426;
+    border-radius: 5px;
+    background-color: #0A0441;
+    color: #ffffffc0;
+}
+
+.search-button {
+    padding: 5px;
+    border: 1px solid #090426;
+    border-radius: 5px;
+    background-color: #FF9500;
+    color: #ffffffc0;
+}
+
+.loupe-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #ffffffc0;
+}
+
+.all-manga-section {
+    width: 100%;
+    height: 85%;
+    padding: 0 40px;
+    display: flex;
+}
+
+.book {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collection {
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.manga-item {
+    background-color: #0A0441;
+    color: #ffffffc0;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: calc(25% - 7.5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 120px;
+}
+
+.manga-item:hover {
+    transform: scale(1.05);
+}
+
+.manga-item img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.manga-item p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* .manga-item button {
+    background-color: #14791B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 12px;
+}
+
+.manga-item button:hover {
+    background-color: #33a53b;
+}
+
+.manga-item .remove-button {
+    background-color: red;
+}
+
+.manga-item .remove-button:hover {
+    background-color: darkred;
+} */
+
+.btn-add {
+    background-color: green; /* Vert */
+    color: white;            /* Texte en blanc */
+    border: none;           /* Pas de bordure */
+    padding: 8px 16px;      /* Espacement interne */
+    border-radius: 4px;     /* Coins arrondis */
+    cursor: pointer;        /* Curseur pointer au survol */
+  }
+  
+  .btn-add:hover {
+    background-color: darkgreen; /* Couleur plus foncée au survol */
+  }
+  
+  .btn-remove {
+    background-color: red;       /* Rouge */
+    color: white;                /* Texte en blanc */
+    border: none;                /* Pas de bordure */
+    padding: 8px 16px;          /* Espacement interne */
+    border-radius: 4px;         /* Coins arrondis */
+    cursor: pointer;             /* Curseur pointer au survol */
+  }
+  
+  .btn-remove:hover {
+    background-color: darkred;   /* Couleur plus foncée au survol */
+  }
+  
+
+.load-more-button {
+    background-color: #FF9500;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px;
+}
+
+.load-more-button:hover {
+    background-color: #ff9500a2;
+    transform: scale(1.05);
+}
+
+.load-more-button:disabled {
+    /* background-color: #000000; */
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
+
+/* details */
+
+/* .container-details {
+    width: 40%; 
+    height: 100%;
+    background-color: #f39c12; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+} */
+
+.container-details {
+    width: 40%; 
+    height: 100%;
+    background-color: #f39c12; /* Couleur de fond de secours si l'image ne charge pas */
+    background-image: url('./src/image/images/sangokubook.png'); /* Remplace par le chemin de ton image */
+    background-size: cover; /* Pour que l'image couvre tout l'élément */
+    background-position: center; /* Pour centrer l'image dans l'élément */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+}
+
+
+.manga-details {
+    height: 100%; 
+    width: 100%;
+    background-color: #0A0441;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.details-container {
+    display: flex; /* Utiliser flexbox pour aligner l'image et le texte */
+}
+
+.manga-image {
+    width: 30%;
+    /* height: 70%; */
+    border-radius: 10px;
+    margin-right: 20px; /* Espacement entre l'image et le texte */
+}
+
+.details-text {
+    width: 60%; /* Ajustez la largeur de la section de texte */
+    overflow-y: auto; /* Permet le défilement vertical */
+    max-height: 300px; /* Hauteur maximale pour le défilement */
+}
+
+
+
+
+.synopsis-container {
+    padding-right: 10px; /* Espacement droit */
+}
+
+.manga-interaction {
+    margin-top: 20px;
+    background-color: #111474;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .status {
+    margin-bottom: 15px;
+  }
+  
+  .status select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .progression, .progressionTome {
+    margin-bottom: 15px;
+  }
+  
+  .progression input, .progressionTome input {
+    width: 100px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .rating {
+    margin-bottom: 15px;
+  }
+  
+  .stars {
+    display: flex;
+  }
+  
+  .star {
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+    margin-right: 5px;
+  }
+  
+  .star.selected {
+    color: gold;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+  }
+  
+
+
+
+  

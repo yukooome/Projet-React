@@ -1,0 +1,10 @@
+* {
+    margin: 0; /* Supprime toutes les marges par défaut */
+    padding: 0; /* Supprime tous les paddings par défaut */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur */
+}
+
+body{
+    font-size: large;
+    font-size: 18px;
+}

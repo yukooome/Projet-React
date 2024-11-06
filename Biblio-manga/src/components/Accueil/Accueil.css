@@ -1,0 +1,397 @@
+* {
+  margin: 0; /* Supprime toutes les marges par défaut */
+  padding: 0; /* Supprime tous les paddings par défaut */
+  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur */
+}
+
+
+/* NAV_BARRE */
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #090426; 
+}
+
+.navbar {
+  cursor: pointer; 
+}
+
+.logo {
+  height: auto; /* Assurer la hauteur automatique pour respecter le ratio */
+  width: 10vw; /* Ajuster la largeur selon vos besoins, ici 10% de la largeur de la fenêtre */
+  max-width: 100px; /* Limiter la largeur maximale pour éviter un logo trop grand */
+  max-height: 50px; /* Limiter la hauteur maximale pour éviter un logo trop haut */
+}
+
+.links-section {
+  display: flex;
+  gap: 15px; /* Espacement entre les liens */
+  /* background-color: aqua; */
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff; 
+}
+
+.link:hover {
+  /* text-decoration: underline; */
+  color: #f39c12;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #090426; /* Bordure de la barre de recherche */
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #0A0441; /* Couleur de fond de la barre de recherche */
+  color: #ffffffc0; /* Couleur du texte à l'intérieur de la barre de recherche */
+}
+
+.search-button{
+  padding: 5px;
+  border: 1px solid #090426;
+  border-radius: 5px; /* Coins arrondis */
+  background-color: #007bff;
+  color: #ffffffc0; 
+}
+
+.loupe-icon {
+  margin-left: 5px; 
+  cursor: pointer; 
+  color: #ffffffc0;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-text {
+  margin-left: 5px; 
+}
+
+
+
+/* HEADER */
+.header {
+  height: 100vh; 
+  background-image: url('./src/image/images/mangabgfull.jpeg');
+  background-size: cover; /* Pour couvrir toute la div */
+  background-position: center; /* Centrer l'image */
+  background-blend-mode: overlay; /* Mélanger l'image et la couleur */
+  background-color: rgba(9, 4, 38, 0.97); 
+  /* position: relative;  */
+  display: flex; 
+  padding: 5vh 0 5vh 0;
+}
+
+
+
+
+/* CONTENU GAUCHE */
+.content-left {
+  width: 25%; 
+  /* background-color: rgba(255, 0, 0, 0.46); */
+  padding: 0 20px 0 20px; 
+  box-sizing: border-box; 
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* annonces */
+.annonce {
+  height: 40%;
+  width: 100%;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column; 
+  /* background-color: aqua; */
+}
+
+.link-annonce {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 25px; 
+  text-decoration: none; /* Enlève le soulignement par défaut des liens */
+  color: #ffffff; 
+}
+
+.link-annonce:hover {
+  /* text-decoration: underline;  */
+  color: #f39c12;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.bell-icon {}
+.smile-icon {}
+.globe-icon {}
+.envelope-icon {}
+
+
+/* top perso */
+.top-perso {
+  /* background-color: lightgreen; */
+  height: 30%;
+  width: 100%; 
+  color: #ffffff;
+  padding: 20px; 
+
+}
+
+.boules {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.boule {
+  width: 60px; 
+  height: 60px;
+  border-radius: 50%; /* Forme circulaire */
+  overflow: hidden; /* Masque le débordement de l'image */
+  margin: 0 10px; /* Espacement entre les boules */
+  /* background-color: #fff; Couleur de fond */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boule img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; /* Remplit la boule sans déformer l'image */
+}
+
+
+/* top manga */
+.top-manga {
+  /* background-color: lightcoral; */
+  height: 30%;
+  width: 100%; 
+  color: #ffffff;
+  padding: 20px; 
+}
+
+.carres {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.carre {
+  width: 150px; 
+  height: 80px; 
+  border-radius: 20%; 
+  overflow: hidden; 
+  margin: 0 10px; 
+  /* background-color: #fff; Couleur de fond */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carre img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+
+
+
+
+/* CONTENU DROITE */
+.content-right {
+  width: 75%;
+  /* background-color: rgba(0, 255, 51, 0.34);  */
+  padding: 0 20px 0 20px; 
+  box-sizing: border-box; 
+
+  display: flex;
+  flex-direction: column; 
+}
+
+/* haut dr */
+.top-right {
+  /* background-color: lightblue;  */
+  height: 70%;
+  width: 100%; 
+  padding: 0 20px 20px 0; 
+  display: flex;
+}
+
+.actualite{
+  width: 66.66%;
+  height: 100%;
+  /* background-color: blueviolet; */
+}
+
+.titre-actu{
+  color: #ffffff;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 10%;
+  font-size: 30px;
+}
+
+.img-actu {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 90%;
+}
+
+.img-actu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px; 
+}
+
+.meteo{
+  width: 33.33%;
+  height: 100%;
+  /* background-color: #2be243; */
+  padding-left: 10px;
+}
+
+.titre-meteo{
+  color: #ffffff;
+  /* background-color: aqua; */
+  width: 100%;
+  height: 10%;
+  font-size: 30px;
+}
+
+.case-meteo{
+  background-color: #090426;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  color: #ffffff;
+
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+  justify-content: space-between;
+
+  p{}
+
+}
+
+.date{
+  font-size: 35px;
+}
+
+.meteo-local{
+  font-size: 100px;
+}
+
+
+
+
+
+/* bas dr */
+.bottom-right {
+  /* background-color: lightcoral; */
+  height: 30%;
+  width: 100%; 
+  padding: 0 20px 20px 0;
+  display: flex;
+}
+
+.jeux1 {
+  width: 33.33%;
+  height: 100%;
+  padding-right: 10px;
+  transition: transform 0.3s ease; /* Ajoute une transition douce */
+}
+
+.jeux1:hover {
+  transform: scale(1.1); /* Agrandit l'élément de 10% au survol */
+}
+
+
+.nb1 {
+  width: 100%;
+  height: 100%;
+  padding-right: 10px;
+  background-color: #090426;
+  border-radius: 30px;
+  position: relative; /* Relative pour positionner l'image dedans */
+}
+
+.image-superposee {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%; /* Ajuste la taille de l'image selon tes besoins */
+  height: auto; /* Pour garder les proportions de l'image */
+}
+
+
+.jeux2{
+  width: 33.33%;
+  height: 100%;
+
+}
+
+.nb2{
+  width: 100%;
+  height: 100%;
+  background-color: #090426;
+  border-radius: 30px; 
+}
+
+.image-superposee2 {
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  transform: translate(-5%, -50%);
+  width: 25%; /* Ajuste la taille de l'image selon tes besoins */
+  height: auto; /* Pour garder les proportions de l'image */
+}
+
+.jeux3{
+  width: 33.33%;
+  height: 100%;
+  /* background-color: rgb(73, 43, 226); */
+  padding-left: 10px;
+}
+
+.nb3{
+  width: 100%;
+  height: 100%;
+
+  background-color: #090426;
+  border-radius: 30px; 
+}
+
+.image-superposee3 {
+  position: absolute;
+  top: 93%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  width: 32%; /* Ajuste la taille de l'image selon tes besoins */
+  height: auto; /* Pour garder les proportions de l'image */
+}
+
+
