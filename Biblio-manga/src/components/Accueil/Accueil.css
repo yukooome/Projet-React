@@ -335,15 +335,21 @@
   padding-right: 10px;
   background-color: #090426;
   border-radius: 30px;
-  position: relative; /* Relative pour positionner l'image dedans */
+  position: relative; 
+  cursor: pointer;
+
+  h2{
+    color: aliceblue;
+    padding: 15px;
+  }
 }
 
 .image-superposee {
   position: absolute;
-  top: 55%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150%; 
+  width: 115%; 
   height: auto; 
 }
 
@@ -359,16 +365,23 @@
   height: 100%;
   background-color: #090426;
   border-radius: 30px; 
+
+  cursor: pointer;
+
+  h2{
+    color: aliceblue;
+    padding: 15px;
+  }
 }
 
-.image-superposee2 {
+/* .image-superposee2 {
   position: absolute;
   top: 77%;
   left: 50%;
   transform: translate(-5%, -50%);
-  width: 22%; /* Ajuste la taille de l'image selon tes besoins */
-  height: auto; /* Pour garder les proportions de l'image */
-}
+  width: 22%; 
+  height: auto; 
+} */
 
 .jeux3{
   width: 33.33%;
@@ -385,13 +398,27 @@
   border-radius: 30px; 
 }
 
-.image-superposee3 {
+/* .image-superposee3 {
   position: absolute;
   top: 93%;
   left: 86%;
   transform: translate(-50%, -50%);
   width: 20%;
   height: auto; 
+} */
+
+.img-bg-3{
+  
+  height: 100%;
+  width: 100%;
+  border-radius: 30px; 
+
+
+  background-image: url('./src/image/images/shueishagamestitre.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-blend-mode: overlay; 
+  /* background-color: rgba(9, 4, 38, 0.97);  */
 }
 
 

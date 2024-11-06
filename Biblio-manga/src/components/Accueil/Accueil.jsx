@@ -149,16 +149,23 @@ function Accueil() {
           <div className='bottom-right'>
             <div className='jeux1'>
               <div className='nb1'>
+              <h2>Histoire</h2>
                 <img src="./src/image/images/Luffy-Gear-5-One-Piece-removebg-preview.png" alt="Superposition" className="image-superposee" />
               </div>
             </div>
+            
             <div className='jeux2'>
               <div className='nb2'>
-              <img src="./src/image/images/nauto-removebg-preview.png" alt="Superposition" className="image-superposee2" />
+              <h2>Blog</h2>
+                
+              {/* <img src="./src/image/images/nauto-removebg-preview.png" alt="Superposition" className="image-superposee2" /> */}
               </div>
             </div>
             <div className='jeux3'>
               <div className='nb3'>
+                <div className='img-bg-3'>
+
+                </div>
               {/* <img src="./src/image/images/son-goku-at:taque-ii-removebg-preview.png" alt="Superposition" className="image-superposee3" /> */}
               </div>
             </div>
