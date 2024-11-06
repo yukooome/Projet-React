@@ -8,6 +8,8 @@ import {
   faGlobe, 
   faEnvelope 
 } from '@fortawesome/free-solid-svg-icons'; // Assurez-vous d'importer les icônes nécessaires
+// npm install @fortawesome/free-brands-svg-icons
+
 
 import './Accueil.css'; // Import des styles CSS
 import Meteo from './meteo-date'; // Import du composant Meteo
@@ -157,7 +159,7 @@ function Accueil() {
             </div>
             <div className='jeux3'>
               <div className='nb3'>
-              <img src="./src/image/images/son-goku-attaque-ii-removebg-preview.png" alt="Superposition" className="image-superposee3" />
+              {/* <img src="./src/image/images/son-goku-at:taque-ii-removebg-preview.png" alt="Superposition" className="image-superposee3" /> */}
               </div>
             </div>
           </div>

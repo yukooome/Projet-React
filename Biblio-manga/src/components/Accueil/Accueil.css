@@ -1,7 +1,7 @@
 * {
-  margin: 0; /* Supprime toutes les marges par défaut */
-  padding: 0; /* Supprime tous les paddings par défaut */
-  box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur */
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box; 
 }
 
 
@@ -20,15 +20,15 @@
 }
 
 .logo {
-  height: auto; /* Assurer la hauteur automatique pour respecter le ratio */
-  width: 10vw; /* Ajuster la largeur selon vos besoins, ici 10% de la largeur de la fenêtre */
-  max-width: 100px; /* Limiter la largeur maximale pour éviter un logo trop grand */
-  max-height: 50px; /* Limiter la hauteur maximale pour éviter un logo trop haut */
+  height: auto; 
+  width: 10vw; 
+  max-width: 100px; 
+  max-height: 50px; 
 }
 
 .links-section {
   display: flex;
-  gap: 15px; /* Espacement entre les liens */
+  gap: 15px; 
   /* background-color: aqua; */
 }
 
@@ -50,16 +50,16 @@
 .search-input {
   padding: 5px;
   margin-right: 5px;
-  border: 1px solid #090426; /* Bordure de la barre de recherche */
-  border-radius: 5px; /* Coins arrondis */
-  background-color: #0A0441; /* Couleur de fond de la barre de recherche */
-  color: #ffffffc0; /* Couleur du texte à l'intérieur de la barre de recherche */
+  border: 1px solid #090426; 
+  border-radius: 5px;
+  background-color: #0A0441;
+  color: #ffffffc0; 
 }
 
 .search-button{
   padding: 5px;
   border: 1px solid #090426;
-  border-radius: 5px; /* Coins arrondis */
+  border-radius: 5px; 
   background-color: #007bff;
   color: #ffffffc0; 
 }
@@ -122,7 +122,7 @@
   display: flex; 
   align-items: center; 
   margin-bottom: 25px; 
-  text-decoration: none; /* Enlève le soulignement par défaut des liens */
+  text-decoration: none; 
   color: #ffffff; 
 }
 
@@ -340,11 +340,11 @@
 
 .image-superposee {
   position: absolute;
-  top: 60%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150%; /* Ajuste la taille de l'image selon tes besoins */
-  height: auto; /* Pour garder les proportions de l'image */
+  width: 150%; 
+  height: auto; 
 }
 
 
@@ -363,10 +363,10 @@
 
 .image-superposee2 {
   position: absolute;
-  top: 79%;
+  top: 77%;
   left: 50%;
   transform: translate(-5%, -50%);
-  width: 25%; /* Ajuste la taille de l'image selon tes besoins */
+  width: 22%; /* Ajuste la taille de l'image selon tes besoins */
   height: auto; /* Pour garder les proportions de l'image */
 }
 
@@ -390,8 +390,8 @@
   top: 93%;
   left: 86%;
   transform: translate(-50%, -50%);
-  width: 32%; /* Ajuste la taille de l'image selon tes besoins */
-  height: auto; /* Pour garder les proportions de l'image */
+  width: 20%;
+  height: auto; 
 }
 
 
