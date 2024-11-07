@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Contact.css'; // Importation du fichier CSS
 
+
+import Navbar from '../Navbar/Navbar'; // Import du composant Navbar
+
 const Contact = () => {
   const [pseudo, setPseudo] = useState('');
   const [subject, setSubject] = useState('');
@@ -17,7 +20,11 @@ const Contact = () => {
   };
 
   return (
-    <div className='first-cont-contact'>
+    <section>
+      {/* NAVBARRE */}
+      <Navbar /> {/* Intégration de la barre de navigation dans la page Accueil */}
+
+      <div className='first-cont-contact'>
       <div className="container-contact">
       <h1 className="title-contact">Contactez-nous</h1>
       <form onSubmit={handleSubmit} className="form-contact">
@@ -55,6 +62,10 @@ const Contact = () => {
     </div>
 
     </div>
+
+    </section>
+
+    
   );
 };
 

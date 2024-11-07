@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* NAV_BARRE */
+  .app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #090426;
+  }
+  
+  .navbar {
+    cursor: pointer;
+  }
+  
+  .logo {
+    height: auto;
+    width: 10vw;
+    max-width: 100px;
+    max-height: 50px;
+  }
+  
+  .links-section {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .link:hover {
+    color: #f39c12;
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #090426;
+    border-radius: 5px;
+    background-color: #0A0441;
+    color: #ffffffc0;
+  }
+  
+  .search-button {
+    padding: 5px;
+    border: 1px solid #090426;
+    border-radius: 5px;
+    /* background-color: #007bff; */
+    color: #ffffffc0;
+  }
+  
+  .loupe-icon {
+    margin-left: 5px;
+    cursor: pointer;
+    color: #ffffffc0;
+  }
+  
+  .login-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-text {
+    margin-left: 5px;
+  }
+  
+  /* HEADER */
+  .header {
+    height: 100vh;
+    background-image: url('./src/image/images/mangabgfull.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(9, 4, 38, 0.97);
+    display: flex;
+    padding: 5vh 0;
+  }
+  
+  .content-left {
+    width: 25%;
+    padding: 20px;
+  }
+  
+  .blog-introduction {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content-right {
+    width: 75%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Section des articles */
+  .articles-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .article-card {
+    display: flex;
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .article-image {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .article-content {
+    padding: 20px;
+    color: #ffffff;
+    width: 70%;
+  }
+  
+  .article-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .article-content p {
+    font-size: 16px;
+    color: #bbb;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #f39c12;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  

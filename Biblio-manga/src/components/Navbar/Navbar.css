@@ -1,0 +1,74 @@
+/* NAV_BARRE */
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #090426; 
+  }
+  
+  .navbar {
+    cursor: pointer; 
+  }
+  
+  .logo {
+    height: auto; 
+    width: 10vw; 
+    max-width: 100px; 
+    max-height: 50px; 
+  }
+  
+  .links-section {
+    display: flex;
+    gap: 15px; 
+    /* background-color: aqua; */
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #ffffff; 
+  }
+  
+  .link:hover {
+    /* text-decoration: underline; */
+    color: #f39c12;
+  }
+  
+  .search-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #090426; 
+    border-radius: 5px;
+    background-color: #0A0441;
+    color: #ffffffc0; 
+  }
+  
+  .search-button{
+    padding: 5px;
+    border: 1px solid #090426;
+    border-radius: 5px; 
+    background-color: #007bff;
+    color: #ffffffc0; 
+  }
+  
+  .loupe-icon {
+    margin-left: 5px; 
+    cursor: pointer; 
+    color: #ffffffc0;
+  }
+  
+  .login-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-text {
+    margin-left: 5px; 
+  }
+  

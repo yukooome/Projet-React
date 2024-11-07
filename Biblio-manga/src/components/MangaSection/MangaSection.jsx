@@ -6,6 +6,8 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import MangaBook from './manga-book';
 import MangaDetails from './manga-details';
 
+import Navbar from '../Navbar/Navbar'; // Import du composant Navbar
+
 function MangaSection() {
   const [showMyList, setShowMyList] = useState(false); // État pour gérer l'affichage des mangas
   const [myMangaList, setMyMangaList] = useState([]); // Liste personnalisée des mangas
@@ -30,6 +32,10 @@ function MangaSection() {
 
   return (
     <section>
+
+      {/* NAVBARRE */}
+      <Navbar /> {/* Intégration de la barre de navigation dans la page Accueil */}
+      
       <div className='manga'>
         <div className='titre-section-manga'>
           <h2 className='underline'>Manga</h2>

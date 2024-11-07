@@ -75,7 +75,7 @@ function MangaDetails({ mangaId }) {
   return (
     <div className="manga-details">
       <div className="details-container">
-      <p>Chargement des détails...</p>
+      {/* <p>Chargement des détails...</p> */}
         <img src={mangaDetails.images.jpg.large_image_url} alt={mangaDetails.title} className="manga-image" />
         <div className="details-text">
           <h2>{mangaDetails.title}</h2>

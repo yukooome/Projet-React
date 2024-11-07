@@ -14,6 +14,9 @@ import {
 import './Accueil.css'; // Import des styles CSS
 import Meteo from './meteo-date'; // Import du composant Meteo
 
+import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar'; // Import du composant Navbar
+
 function Accueil() {
   // Insérer les personnages dans la partie top personnage du moment (top-perso)
   const personnages = [
@@ -39,8 +42,11 @@ function Accueil() {
   return (
     <section>
       {/* NAVBARRE */}
-      <div className="app-container">
-        {/* NavBar avec logo */}
+      <Navbar /> {/* Intégration de la barre de navigation dans la page Accueil */}
+
+      
+      {/* <div className="app-container">
+        
         <nav className="navbar">
           <img 
             className="logo"
@@ -49,14 +55,14 @@ function Accueil() {
           /> 
         </nav>
 
-        {/* Section "Manga" et "Contacts" */}
+        
         <div className="links-section">
           <a href="/accueil" className="link">Accueil</a>
           <a href="/manga" className="link">Manga</a>
           <a href="/contacts" className="link">Contacts</a>
         </div>
 
-        {/* Barre de recherche */}
+        
         <div className="search-section">
           <input 
             className="search-input" 
@@ -71,7 +77,7 @@ function Accueil() {
           </button>
         </div>
 
-        {/* Logo de connexion et texte Yoko */}
+        
         <div className="login-section">
           <FontAwesomeIcon 
             icon={faUser} 
@@ -79,7 +85,7 @@ function Accueil() {
           />
           <span className="login-text">Yukooo</span>
         </div>
-      </div>
+      </div> */}
 
       {/* HEADER */}
       <div className="header">
@@ -134,11 +140,11 @@ function Accueil() {
           <div className='top-right'>
             <div className='actualite'>
               <div className='titre-actu'>
-                <h3>Actualité</h3>
+                <h3> Bienvenue chez MangaKo</h3>
               </div>
               <div 
-              // lien fictif
-              onClick={() => window.location.href = 'https://lien-externe.com'}
+              // // lien fictif
+              // onClick={() => window.location.href = './src/components/Blog/Blog.jsx'}
               className='img-actu'>
                 <img src="./src/image/images/img-fullperso-actu.jpg" alt="img-fullperso-actu" />
               </div>
@@ -160,17 +166,19 @@ function Accueil() {
               </div>
             </div>
             
-            <div className='jeux2'>
-              <div
-              // lien fictif
-              onClick={() => window.location.href = 'https://lien-externe.com'}
-              className='nb2'>
-              <h2>Blog</h2>
-              {/* <p>viens decouvrir</p> */}
-                
-              <img src="./src/image/images/nauto-removebg-preview.png" alt="Superposition" className="image-superposee2" />
-              </div>
-            </div>
+            <div className="jeux2">
+        <div className="nb2">
+          <h2>Blog</h2>
+          <Link to="/blog">
+            <img 
+              src="./src/image/images/nauto-removebg-preview.png" 
+              alt="Superposition" 
+              className="image-superposee2" 
+            />
+          </Link>
+        </div>
+      </div>
+
             <div className='jeux3'>
               <div className='nb3'>
                 <div className='img-bg-3'>
@@ -182,6 +190,106 @@ function Accueil() {
           </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className='supplement'>
+  <div className='supplement-header'>
+    <h2>Suggestions pour vous</h2>
+  </div>
+
+  <div className='supplement-content'>
+    <div className='suggestion-item'>
+      <h3>Découvrez nos mangas populaires</h3>
+      <div className='suggestion-images'>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/One-piece-anime-water_seven-arc.jpg' alt='Manga Populaire 1' />
+          <div className='image-overlay'>
+            <p>One Piece</p>
+          </div>
+        </div>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/naruto-team-7.jpeg' alt='Manga Populaire 2' />
+          <div className='image-overlay'>
+            <p>Naruto</p>
+          </div>
+        </div>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/Attaque_des_titans_deco_720x.png.webp' alt='Manga Populaire 3' />
+          <div className='image-overlay'>
+            <p>Attack on Titan</p>
+          </div>
+        </div>
+      </div>
+      <p className='more-info'>
+        Explorez notre collection complète de mangas populaires, cliquez ici pour plus !
+      </p>
+      <button className='cta-button'>Voir plus</button>
+    </div>
+
+    <div className='suggestion-item'>
+      <h3>Jeux à découvrir</h3>
+      <div className='suggestion-images'>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/dbzfigter.jpeg' alt='Jeu 1' />
+          <div className='image-overlay'>
+            <p>Dragon Ball FighterZ</p>
+          </div>
+        </div>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/TheWitcher3.webp' alt='Jeu 2' />
+          <div className='image-overlay'>
+            <p>The Witcher 3</p>
+          </div>
+        </div>
+        <div className='suggestion-image'>
+          <img src='./src/image/images/FF_XV_cover.jpg' alt='Jeu 3' />
+          <div className='image-overlay'>
+            <p>Final Fantasy XV</p>
+          </div>
+        </div>
+      </div>
+      <p className='more-info'>
+        Découvrez ces jeux incroyables inspirés de vos mangas préférés. Cliquez pour voir plus !
+      </p>
+      <button className='cta-button'>Explorer les jeux</button>
+    </div>
+
+    <div className='suggestion-item'>
+      <h3>Actualités à ne pas manquer</h3>
+      <div className='suggestion-news'>
+        <div className='news-item'>
+          <img src='./src/image/images/article-1.jpg' alt='Article 1' />
+          <p className='news-title'>Les dernières tendances dans l'univers du manga</p>
+        </div>
+        <div className='news-item'>
+          <img src='./src/image/images/article-2.jpg' alt='Article 2' />
+          <p className='news-title'>Les nouveaux jeux vidéo adaptés de mangas à découvrir</p>
+        </div>
+      </div>
+      <p className='more-info'>
+        Lisez les derniers articles sur les tendances manga et les jeux inspirés des univers manga.
+      </p>
+      <button className='cta-button'>Lire plus d'articles</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
     </section>
   );
 }
