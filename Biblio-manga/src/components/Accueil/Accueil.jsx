@@ -205,12 +205,12 @@ function Accueil() {
 
       <div className='supplement'>
   <div className='supplement-header'>
-    <h2>Suggestions pour vous</h2>
+    <h3>Suggestions pour vous</h3>
   </div>
 
   <div className='supplement-content'>
     <div className='suggestion-item'>
-      <h3>Découvrez nos mangas populaires</h3>
+      <h4>Découvrez nos mangas populaires</h4>
       <div className='suggestion-images'>
         <div className='suggestion-image'>
           <img src='./src/image/images/One-piece-anime-water_seven-arc.jpg' alt='Manga Populaire 1' />
@@ -238,7 +238,7 @@ function Accueil() {
     </div>
 
     <div className='suggestion-item'>
-      <h3>Jeux à découvrir</h3>
+      <h4>Jeux à découvrir</h4>
       <div className='suggestion-images'>
         <div className='suggestion-image'>
           <img src='./src/image/images/dbzfigter.jpeg' alt='Jeu 1' />
@@ -266,7 +266,7 @@ function Accueil() {
     </div>
 
     <div className='suggestion-item'>
-      <h3>Actualités à ne pas manquer</h3>
+      <h4>Actualités à ne pas manquer</h4>
       <div className='suggestion-news'>
         <div className='news-item'>
           <img src='./src/image/images/article-1.jpg' alt='Article 1' />

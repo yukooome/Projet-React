@@ -5,82 +5,6 @@
 }
 
 
-/* NAV_BARRE */
-/* 
-.app-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  color: #ffffff;
-  background-color: #090426; 
-}
-
-.navbar {
-  cursor: pointer; 
-}
-
-.logo {
-  height: auto; 
-  width: 10vw; 
-  max-width: 100px; 
-  max-height: 50px; 
-}
-
-.links-section {
-  display: flex;
-  gap: 15px; 
-
-}
-
-.link {
-  text-decoration: none;
-  color: #ffffff; 
-}
-
-.link:hover {
-  color: #f39c12;
-}
-
-.search-section {
-  display: flex;
-  align-items: center;
-}
-
-.search-input {
-  padding: 5px;
-  margin-right: 5px;
-  border: 1px solid #090426; 
-  border-radius: 5px;
-  background-color: #0A0441;
-  color: #ffffffc0; 
-}
-
-.search-button{
-  padding: 5px;
-  border: 1px solid #090426;
-  border-radius: 5px; 
-  background-color: #007bff;
-  color: #ffffffc0; 
-}
-
-.loupe-icon {
-  margin-left: 5px; 
-  cursor: pointer; 
-  color: #ffffffc0;
-}
-
-.login-section {
-  display: flex;
-  align-items: center;
-}
-
-.login-text {
-  margin-left: 5px; 
-}
- */
-
-
 /* HEADER */
 .header {
   height: 100vh; 
@@ -379,6 +303,7 @@
   h2{
     color: aliceblue;
     padding: 15px;
+    
   }
   
 }
@@ -443,7 +368,8 @@
 .supplement {
   width: 100%;
   padding: 30px;
-  background-color: rgba(9, 4, 38, 0.85);
+  /* background: linear-gradient(135deg, #090426, #3a1e68); */
+  background-color: #090426;
   /* border-radius: 10px; */
   color: white;
   /* margin-top: 20px; */
@@ -454,11 +380,11 @@
   margin-bottom: 30px;
 }
 
-.supplement-header h2 {
-  font-size: 2.5em;
-  color: #f39c12;
+.supplement-header h3 {
+  font-size: 30px;
+  color: #f39d12;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgb(255, 0, 0); */
 }
 
 .supplement-content {
@@ -469,7 +395,7 @@
 
 .suggestion-item {
   padding: 20px;
-  background-color: #1a1a2e;
+  background-color: #f39d12b8;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
@@ -480,10 +406,11 @@
   transform: translateY(-5px);
 }
 
-.suggestion-item h3 {
-  font-size: 1.8em;
+.suggestion-item h4 {
+  /* font-size: 1.8em; */
+  font-size: 25px;
   margin-bottom: 20px;
-  color: #f39c12;
+  color: aliceblue;
   font-weight: bold;
 }
 
