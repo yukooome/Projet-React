@@ -198,6 +198,46 @@ function Accueil() {
 
 
 
+      <div className="section-vide">
+  <div className="section-vide-header">
+    <h3 className='underline'>Restez informé avec nos actualités professionnelles</h3>
+  </div>
+
+  <div className="section-vide-content">
+    <div className="actualite-professionnelle">
+      <h4>Les dernières tendances du manga</h4>
+      <p>
+        Découvrez les mangas les plus populaires cette saison, avec des analyses détaillées et des recommandations personnalisées. Nous explorons les dernières sorties et les classiques incontournables du genre.
+      </p>
+      <button className="cta-button">En savoir plus</button>
+    </div>
+
+    <div className="actualite-professionnelle">
+      <h4>Événements et salons à venir</h4>
+      <p>
+        Participez aux événements majeurs du manga et des jeux vidéo. Rencontrez des créateurs, assistez à des panels, et découvrez les dernières nouveautés en avant-première. Ne manquez pas les événements à ne pas rater !
+      </p>
+      <button className="cta-button">Explorer les événements</button>
+    </div>
+
+    <div className="actualite-professionnelle">
+      <h4>Les jeux inspirés de vos mangas préférés</h4>
+      <p>
+        Plongez dans des jeux vidéo qui vous permettent de vivre les aventures de vos héros de manga préférés. Découvrez des critiques et des conseils pour jouer à ces jeux incontournables.
+      </p>
+      <button className="cta-button">Voir les jeux</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -205,7 +245,7 @@ function Accueil() {
 
       <div className='supplement'>
   <div className='supplement-header'>
-    <h3>Suggestions pour vous</h3>
+    <h3 className='underline'>Suggestions pour vous</h3>
   </div>
 
   <div className='supplement-content'>
