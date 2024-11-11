@@ -3,15 +3,15 @@ import './avis.css'; // Fichier CSS pour le style
 
 const reviews = [
     {
-      name: 'Himenoana',
+      name: 'Hinata4541',
       date: 'Le 10 septembre 2024',
-      text: `Un catalogue très complet, passant par les titres populaires à d'autres uniquement disponibles chez Mangas.io, et à prix abordable... Une belle alternative aux plateformes illégales !`,
+      text: `Un catalogue très complet, passant par les titres populaires à d'autres uniquement disponibles chez MangaKo, et à prix abordable... Une belle alternative aux plateformes illégales !`,
       avatar: './src/image/images/personnages-nana-removebg-preview.png', // Exemple de lien d'avatar
       emoji: '😍',
       bgColor: '#7a4bfc', // Bleu-violet
     },
     {
-      name: 'Chan K',
+      name: 'NanaYush',
       date: 'Le 2 octobre 2024',
       text: `Super app, un abonnement pas cher pour des mangas en illimité. Le catalogue romance commence à être très intéressant pour les amateurs de webtoon, c’est le bon choix rapport qualité prix !`,
       avatar: './src/image/images/hinata-removebg-preview.png',
@@ -19,15 +19,15 @@ const reviews = [
       bgColor: '#f78c44', // Orange doux
     },
     {
-      name: 'Florian',
+      name: 'Ninou718',
       date: 'Le 2 novembre 2024',
-      text: `Très bonne application, avec quelques très bons mangas complets. Je conseille Bakuman notamment. J'espère que la communauté va grossir pour que Mangas.io puissent attirer encore plus d'éditeurs !`,
+      text: `Très bonne application, avec quelques très bons mangas complets. Je conseille Bakuman notamment. J'espère que la communauté va grossir pour que MangaKo puissent attirer encore plus d'éditeurs !`,
       avatar: './src/image/images/luffy-tete-removebg-preview.png',
       emoji: '😍',
       bgColor: '#fbbf0f', // Jaune chaud
     },
     {
-      name: 'Alexandre',
+      name: 'Nouhi3',
       date: 'Le 1er décembre 2024',
       text: `Un plaisir dans les transports ou dans son lit de pouvoir lire ses mangas tranquillement. Il y a des ajouts et l’équipe est toujours à la recherche de nouvelles licences pour notre plus grand plaisir.`,
       avatar: './src/image/images/Edward-removebg-preview.png',
