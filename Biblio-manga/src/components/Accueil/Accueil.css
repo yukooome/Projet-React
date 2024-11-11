@@ -216,6 +216,7 @@
   padding: 20px;
   color: #ffffff;
   justify-content: space-between;
+  border: 3px solid #ffffff;
 
   p{}
 
@@ -260,6 +261,7 @@
   padding-right: 10px;
   background-color: #090426;
   border-radius: 30px;
+  border: 3px solid #ffffff;
   position: relative; 
   cursor: pointer;
 
@@ -297,6 +299,7 @@
   padding-right: 10px;
   background-color: #090426;
   border-radius: 30px;
+  border: 3px solid #ffffff;
   position: relative; 
   
 
@@ -362,6 +365,78 @@
 
 
 
+/* section vide  */
+.section-vide {
+  width: 100%;
+  background-color: #090426;
+  color: white;
+  padding: 30px;
+  /* margin-top: 20px; */
+  display: flex;
+  justify-content: center;
+}
+
+.more-place{
+  width: 80%;
+  /* background-color: aqua; */
+}
+
+.section-vide-header {
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+
+.section-vide-header h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.section-vide-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  border: 3px solid #ffffff;
+}
+
+.actualite-professionnelle {
+  /* background-color: #f39d12b8; */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.actualite-professionnelle:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+.actualite-professionnelle h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.cta-button {
+  background-color: #f39d12;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67e22;
+}
+
+
+
+
 
 
 /* supplement */
@@ -373,6 +448,13 @@
   /* border-radius: 10px; */
   color: white;
   /* margin-top: 20px; */
+  display: flex;
+  justify-content: center;
+}
+
+.more-place{
+  width: 80%;
+  /* background-color: aqua; */
 }
 
 .supplement-header {
@@ -392,6 +474,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  /* border: 3px solid #ffffff; */
 }
 
 .suggestion-item {
@@ -400,6 +483,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
+  border: 3px solid #ffffff;
 }
 
 .suggestion-item:hover {
@@ -506,63 +590,88 @@
 
 
 
-/* section vide  */
-.section-vide {
+/* abonnement */
+/* Abonnement Section */
+.promo-container-abonement {
   width: 100%;
+  height: 50vh;
+  padding: 30px;
   background-color: #090426;
   color: white;
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion-abo-abonement {
+  width: 80%;
+}
+
+.promo-abonement {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #090426, #3a1e68);
+  padding: 20px;
+}
+
+.promo-abonement h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.abo-options-abonement {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   /* margin-top: 20px; */
 }
 
-.section-vide-header {
-  /* text-align: center; */
-  margin-bottom: 20px;
-}
-
-.section-vide-header h3 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.section-vide-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-
-.actualite-professionnelle {
-  /* background-color: #f39d12b8; */
-  border-radius: 10px;
+.abo-abonement {
+  /* background-color: #1b104b; */
   padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
+  border-radius: 20px;
+  text-align: center;
+  flex: 1;
+  color: white;
 }
 
-.actualite-professionnelle:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
-}
-
-.actualite-professionnelle h4 {
-  font-size: 22px;
+.abo-abonement h3 {
+  font-size: 1.5rem;
   margin-bottom: 10px;
-  color: aliceblue;
-  font-weight: bold;
 }
 
-.cta-button {
-  background-color: #f39d12;
-  color: #ffffff;
-  border: none;
+.abo-abonement p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.abo-abonement ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.abo-abonement ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Bouton d'abonnement */
+.button-abonement {
+  display: block;
+  margin: 20px auto 0;
   padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: #f39c12;
+  color: white;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-  background-color: #e67e22;
+.button-abonement:hover {
+  background-color:#e67e22;
 }

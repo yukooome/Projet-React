@@ -1,74 +1,75 @@
 /* NAV_BARRE */
 .app-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #090426; 
-  }
-  
-  .navbar {
-    cursor: pointer; 
-  }
-  
-  .logo {
-    height: auto; 
-    width: 10vw; 
-    max-width: 100px; 
-    max-height: 50px; 
-  }
-  
-  .links-section {
-    display: flex;
-    gap: 15px; 
-    /* background-color: aqua; */
-  }
-  
-  .link {
-    text-decoration: none;
-    color: #ffffff; 
-  }
-  
-  .link:hover {
-    /* text-decoration: underline; */
-    color: #f39c12;
-  }
-  
-  .search-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-input {
-    padding: 5px;
-    margin-right: 5px;
-    border: 1px solid #090426; 
-    border-radius: 5px;
-    background-color: #0A0441;
-    color: #ffffffc0; 
-  }
-  
-  .search-button{
-    padding: 5px;
-    border: 1px solid #090426;
-    border-radius: 5px; 
-    background-color: #007bff;
-    color: #ffffffc0; 
-  }
-  
-  .loupe-icon {
-    margin-left: 5px; 
-    cursor: pointer; 
-    color: #ffffffc0;
-  }
-  
-  .login-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .login-text {
-    margin-left: 5px; 
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #090426;
+  position: sticky;  /* Ajouté pour rendre la barre sticky */
+  top: 0; /* Fixer la barre en haut de la page */
+  z-index: 1000; /* Assurez-vous que la barre soit au-dessus des autres éléments */
+  width: 100%; /* S'assurer que la barre occupe toute la largeur */
+}
+
+.navbar {
+  cursor: pointer;
+}
+
+.logo {
+  height: auto;
+  width: 10vw;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.links-section {
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link:hover {
+  color: #f39c12;
+}
+
+.search-section {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid #090426;
+  border-radius: 5px;
+  background-color: #0A0441;
+  color: #ffffffc0;
+}
+
+.search-button {
+  padding: 5px;
+  border: 1px solid #090426;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffffc0;
+}
+
+.loupe-icon {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #ffffffc0;
+}
+
+.login-section {
+  display: flex;
+  align-items: center;
+}
+
+.login-text {
+  margin-left: 5px;
+}

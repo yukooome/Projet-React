@@ -1,0 +1,57 @@
+.feature-section {
+    padding: 50px;
+    background-color: #090426;
+    color: white;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .feature-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .feature-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    /* transition: transform 0.3s ease; */
+  }
+  
+  /* .feature-card:hover {
+    transform: translateY(-10px);
+  } */
+  
+  .feature-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .feature-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature-content p {
+    font-size: 1rem;
+  }
+  
+  .feature-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+  }
+  

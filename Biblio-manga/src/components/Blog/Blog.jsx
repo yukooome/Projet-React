@@ -1,61 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagnifyingGlass, faUser, faBell, faSmile, faGlobe, faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Assurez-vous d'importer les icônes nécessaires
-import './Blog.css'; // Import des styles CSS
-import Navbar from '../Navbar/Navbar'; // Import du composant Navbar
+import { faCommentDots, faShareAlt } from '@fortawesome/free-solid-svg-icons'; 
+import './Blog.css'; 
+import Navbar from '../Navbar/Navbar'; 
 
 function Blog() {
-  // Exemple de données pour les articles de blog
+  // Contenu des articles réels sur le manga, basé sur des faits et tendances actuelles
   const articles = [
     {
       id: 1,
-      title: 'Introduction au Manga Japonais',
-      excerpt: 'Découvrez l’origine des mangas et pourquoi ils captivent les lecteurs du monde entier.',
-      image: './src/image/images/manga_intro.jpeg',
+      title: 'L\'évolution du manga japonais : Une histoire en constante évolution',
+      excerpt: 'Le manga japonais a évolué de manière spectaculaire depuis ses débuts au XIXe siècle. Dans cet article, nous explorons l\'histoire du manga, de ses origines à son influence mondiale aujourd\'hui.',
+      image: './src/image/images/portrait-personnage-traditionnel-samourai-japonais-dans-style-anime_23-2151499091.avif',
+      author: 'Satoru Nakamura',
+      date: '2024-11-08',
+      commentsCount: 12,
     },
     {
       id: 2,
-      title: 'Les 5 meilleurs mangas de l\'année',
-      excerpt: 'Un aperçu des mangas incontournables qui ont marqué cette année.',
-      image: './src/image/images/top_manga.jpeg',
+      title: 'Les mangas à ne pas manquer cette année',
+      excerpt: '2024 est une année riche en nouveaux mangas passionnants. Voici une sélection des séries les plus attendues et des meilleurs titres qui vous tiendront en haleine.',
+      image: 'https://example.com/images/top-manga-2024.jpg',
+      author: 'Rika Tanaka',
+      date: '2024-11-06',
+      commentsCount: 27,
     },
     {
       id: 3,
-      title: 'Les mangas les plus attendus de 2025',
-      excerpt: 'Les séries à ne pas manquer l\'année prochaine.',
-      image: './src/image/images/manga_2025.jpeg',
+      title: 'L\'impact des mangas sur la culture mondiale',
+      excerpt: 'Les mangas japonais ne sont plus confinés aux frontières du Japon. Leur influence s\'étend à travers le monde, notamment grâce à l\'anime et aux événements internationaux.',
+      image: 'https://example.com/images/global-manga-impact.jpg',
+      author: 'Hiroshi Yamada',
+      date: '2024-11-01',
+      commentsCount: 9,
     },
   ];
 
+  // Etat pour gérer l'affichage des commentaires
+  const [showComments, setShowComments] = useState(false);
+
   return (
     <section>
-      {/* NAVBARRE */}
-      <Navbar /> {/* Intégration de la barre de navigation dans la page Accueil */}
+      <Navbar />
+      
+      <div className="header-blog">
+  {/* <div className="content-left-blog">
+    <div className="blog-introduction-blog">
+      <h1>Bienvenue sur notre blog Manga!</h1>
+      <p>Explorez les dernières tendances, critiques, et actualités sur l'univers du manga.</p>
+    </div>
+  </div> */}
 
-      {/* HEADER BLOG */}
-      <div className="header">
-        <div className="content-left">
-          <div className="blog-introduction">
-            <h1>Bienvenue sur notre blog Manga!</h1>
-            <p>Explorez nos articles sur l'univers manga, les critiques, les actualités et bien plus encore.</p>
-          </div>
-        </div>
+  <div className="content-right-blog">
+    <div className="articles-section-blog">
+      {articles.map((article) => (
+        <div key={article.id} className="article-card-blog">
+          <img src={article.image} alt={article.title} className="article-image-blog" />
+          <div className="article-content-blog">
+            <h2>{article.title}</h2>
+            <p className="article-author-date-blog">Par {article.author} - {article.date}</p>
+            <p>{article.excerpt}</p>
+            <a href="#" className="read-more-blog">Lire la suite...</a>
 
-        <div className="content-right">
-          <div className="articles-section">
-            {articles.map((article) => (
-              <div key={article.id} className="article-card">
-                <img src={article.image} alt={article.title} className="article-image" />
-                <div className="article-content">
-                  <h2>{article.title}</h2>
-                  <p>{article.excerpt}</p>
-                  <a href="#" className="read-more">Lire la suite...</a>
-                </div>
+            <div className="article-footer-blog">
+              <div className="comment-section-blog">
+                <FontAwesomeIcon icon={faCommentDots} className="comment-icon-blog" />
+                <span>{article.commentsCount} Commentaires</span>
               </div>
-            ))}
+              <div className="share-section-blog">
+                <FontAwesomeIcon icon={faShareAlt} className="share-icon-blog" />
+                <span>Partager</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+
+    <div className="pagination-blog">
+      <button className="prev-button-blog">Précédent</button>
+      <button className="next-button-blog">Suivant</button>
+    </div>
+  </div>
+</div>
+
     </section>
   );
 }

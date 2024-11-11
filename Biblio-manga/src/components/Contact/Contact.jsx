@@ -22,8 +22,7 @@ const Contact = () => {
   return (
     <section>
       {/* NAVBARRE */}
-      <Navbar /> {/* Intégration de la barre de navigation dans la page Accueil */}
-
+      <Navbar /> 
       <div className='first-cont-contact'>
       <div className="container-contact">
       <h1 className="title-contact">Contactez-nous</h1>
