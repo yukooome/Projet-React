@@ -53,10 +53,13 @@ function Blog() {
   </div> */}
 <div className='place-blog'>
   
-<div className='case-titre'>
-    <p>Bienvenue sur notre Blog MangaKo !</p>
-    <h3>laissez-vous emporter par toute les nws</h3>
-  </div>
+<div className="case-titre">
+<p>Bienvenue sur notre blog MangaKo !</p>
+<h3>Laissez-vous emporter par toutes les dernières nouvelles !</h3>
+  {/* <h3>Toutes les actualités et nouveautés en un seul clic !</h3> */}
+  {/* <p>Explorez le monde incroyable des mangas avec MangaKo !</p> */}
+</div>
+
 
   <div className="content-right-blog">
     <div className="articles-section-blog">

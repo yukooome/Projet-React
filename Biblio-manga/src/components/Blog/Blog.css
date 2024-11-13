@@ -28,18 +28,21 @@
 }
 
 /* section titre */
-.case-titre{
+.case-titre {
     height: auto;
     width: 80%;
-    background-color: #d88e00;
+    background: linear-gradient(90deg, #f0621e 0%, #febe10 100%);
     color: #ffffff;
-    padding: 2vh ;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 5vh; */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
 }
+
+
 
 /* Section des articles */
 .articles-section-blog {
@@ -49,7 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 5vh 50vh;
+    padding: 5vh 40vh;
     justify-content: space-between;
 }
 
