@@ -5,7 +5,7 @@ const features = [
   {
     title: 'Lis tes mangas où et quand tu veux',
     description: 'Tes héroïnes de manga préférées seront toujours à tes côtés avec MangaKo ! Utilise notre app iOS et Android sur mobile ou notre plateforme web sur ton grand écran pour faire le plein de lecture.',
-    imgSrc: './src/image/images/luffy-kid.png',  // Exemple d'image (à remplacer)
+    imgSrc: './src/image/images/hinata-attack.png',  // Exemple d'image (à remplacer)
     bgColor: 'linear-gradient(90deg, #db3a3a 0%, #f0621e 100%)',
   },
   {
