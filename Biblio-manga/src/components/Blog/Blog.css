@@ -7,22 +7,49 @@
 /* Header */
 .header-blog {
     height: 100vh;
-    /* background-image: url('./src/image/images/mangabgfull.jpeg');
+    width: 100%;
+    background-image: url('./src/image/images/plage-manga.png');
     background-size: cover;
     background-position: center;
-    background-blend-mode: overlay; */
-    background-color: #090426;
+    background-blend-mode: overlay;
+    background-color: #040114;
     display: flex;
     flex-direction: column;
     padding: 5vh 0;
     justify-content: space-between;
 }
 
+.place-blog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+/* section titre */
+.case-titre{
+    height: auto;
+    width: 80%;
+    background-color: #d88e00;
+    color: #ffffff;
+    padding: 2vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 5vh; */
+}
+
 /* Section des articles */
 .articles-section-blog {
+    /* width: 80%; */
+    display: flex;
+    /* background-color: #ff0000; */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 5vh 50vh;
     justify-content: space-between;
 }
 

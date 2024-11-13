@@ -11,7 +11,7 @@ function Blog() {
       id: 1,
       title: 'L\'évolution du manga japonais : Une histoire en constante évolution',
       excerpt: 'Le manga japonais a évolué de manière spectaculaire depuis ses débuts au XIXe siècle. Dans cet article, nous explorons l\'histoire du manga, de ses origines à son influence mondiale aujourd\'hui.',
-      image: './src/image/images/portrait-personnage-traditionnel-samourai-japonais-dans-style-anime_23-2151499091.avif',
+      image: './src/image/images/demonslayerpilier.png',
       author: 'Satoru Nakamura',
       date: '2024-11-08',
       commentsCount: 12,
@@ -20,7 +20,7 @@ function Blog() {
       id: 2,
       title: 'Les mangas à ne pas manquer cette année',
       excerpt: '2024 est une année riche en nouveaux mangas passionnants. Voici une sélection des séries les plus attendues et des meilleurs titres qui vous tiendront en haleine.',
-      image: 'https://example.com/images/top-manga-2024.jpg',
+      image: './src/image/images/plage-manga.png',
       author: 'Rika Tanaka',
       date: '2024-11-06',
       commentsCount: 27,
@@ -29,7 +29,7 @@ function Blog() {
       id: 3,
       title: 'L\'impact des mangas sur la culture mondiale',
       excerpt: 'Les mangas japonais ne sont plus confinés aux frontières du Japon. Leur influence s\'étend à travers le monde, notamment grâce à l\'anime et aux événements internationaux.',
-      image: 'https://example.com/images/global-manga-impact.jpg',
+      image: './src/image/images/impact-dessin.png',
       author: 'Hiroshi Yamada',
       date: '2024-11-01',
       commentsCount: 9,
@@ -43,6 +43,7 @@ function Blog() {
     <section>
       <Navbar />
       
+
       <div className="header-blog">
   {/* <div className="content-left-blog">
     <div className="blog-introduction-blog">
@@ -50,6 +51,12 @@ function Blog() {
       <p>Explorez les dernières tendances, critiques, et actualités sur l'univers du manga.</p>
     </div>
   </div> */}
+<div className='place-blog'>
+  
+<div className='case-titre'>
+    <p>Bienvenue sur notre Blog MangaKo !</p>
+    <h3>laissez-vous emporter par toute les nws</h3>
+  </div>
 
   <div className="content-right-blog">
     <div className="articles-section-blog">
@@ -82,6 +89,7 @@ function Blog() {
       <button className="next-button-blog">Suivant</button>
     </div>
   </div>
+</div>
 </div>
 
     </section>
