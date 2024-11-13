@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Header */
-.header-blog {
+  }
+  
+  .header-blog {
     height: 100vh;
     width: 100%;
     background-image: url('./src/image/images/plage-manga.png');
@@ -17,19 +16,16 @@
     flex-direction: column;
     padding: 5vh 0;
     justify-content: space-between;
-}
-
-.place-blog{
+  }
+  
+  .place-blog {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: aqua; */
-}
-
-/* section titre */
-.case-titre {
-    height: auto;
+  }
+  
+  .case-titre {
     width: 80%;
     background: linear-gradient(90deg, #f0621e 0%, #febe10 100%);
     color: #ffffff;
@@ -38,26 +34,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Ajoute des coins arrondis */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une légère ombre */
-}
-
-
-
-/* Section des articles */
-.articles-section-blog {
-    /* width: 80%; */
-    display: flex;
-    /* background-color: #ff0000; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .articles-section-blog {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 5vh 40vh;
+    padding: 0 10%;
     justify-content: space-between;
-}
-
-/* Carte d'article */
-.article-card-blog {
+  }
+  
+  .article-card-blog {
     display: flex;
     flex-direction: column;
     background-color: #1c1c1c;
@@ -65,86 +55,80 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 32%;
     transition: transform 0.3s ease;
-}
-
-.article-card-blog:hover {
+  }
+  
+  .article-card-blog:hover {
     transform: scale(1.05);
-}
-
-.article-image-blog {
+  }
+  
+  .article-image-blog {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-}
-
-.article-content-blog {
+  }
+  
+  .article-content-blog {
     padding: 20px;
     color: #ffffff;
     background-color: #2a2a2a;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-}
-
-.article-content-blog h2 {
+  }
+  
+  .article-content-blog h2 {
     font-size: 20px;
     margin-bottom: 10px;
-}
-
-.article-author-date-blog {
+  }
+  
+  .article-author-date-blog {
     font-size: 14px;
     color: #bbb;
     margin-bottom: 15px;
-}
-
-.article-content-blog p {
+  }
+  
+  .article-content-blog p {
     font-size: 14px;
     color: #bbb;
-}
-
-.read-more-blog {
+  }
+  
+  .read-more-blog {
     color: #f39c12;
     text-decoration: none;
     font-weight: bold;
     margin-top: 10px;
-}
-
-.read-more-blog:hover {
+  }
+  
+  .read-more-blog:hover {
     text-decoration: underline;
-}
-
-/* Section de commentaire et de partage */
-.article-footer-blog {
+  }
+  
+  .article-footer-blog {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
     color: #bbb;
-}
-
-.comment-section-blog, .share-section-blog {
+  }
+  
+  .comment-section-blog, .share-section-blog {
     display: flex;
     align-items: center;
-}
-
-.comment-icon-blog, .share-icon-blog {
+  }
+  
+  .comment-icon-blog, .share-icon-blog {
     margin-right: 5px;
     color: #f39c12;
     cursor: pointer;
-}
-
-.comment-section-blog:hover, .share-section-blog:hover {
-    color: #fff;
-}
-
-/* Pagination */
-.pagination-blog {
+  }
+  
+  .pagination-blog {
     display: flex;
     justify-content: center;
     margin-top: 40px;
-}
-
-.prev-button-blog, .next-button-blog {
+  }
+  
+  .prev-button-blog, .next-button-blog {
     background-color: #f39c12;
     color: #ffffff;
     padding: 10px 20px;
@@ -152,24 +136,15 @@
     border-radius: 5px;
     cursor: pointer;
     margin: 0 10px;
-    transition: background-color 0.3s ease;
-}
-
-.prev-button-blog:hover, .next-button-blog:hover {
+  }
+  
+  .prev-button-blog:hover, .next-button-blog:hover {
     background-color: #d88e00;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .header-blog {
-        flex-direction: column;
-    }
-
-    .content-left-blog, .content-right-blog {
-        width: 100%;
-    }
-
+  }
+  
+  @media (max-width: 768px) {
     .article-card-blog {
-        width: 100%;
+      width: 100%;
     }
-}
+  }
+  
