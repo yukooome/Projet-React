@@ -32,6 +32,7 @@ import Contact from './components/Contact/Contact.jsx'; // Import du composant C
 import Footer from './components/Footer/Footer.jsx';  // Import du composant Footer
 import Blog from './components/Blog/Blog.jsx';  // Import du composant Blog (ajoutez-le ici)
 
+
 function App() {
   return (
     <Router> {/* Encapsule toute l'application dans le Router */}
