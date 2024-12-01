@@ -111,9 +111,11 @@ function Accueil() {
 
           <div className='bottom-right'>
             <div className='jeux1'>
-              <div onClick={() => window.location.href = 'https://lien-externe.com'} className='nb1'>
+              <div className='nb1'>
                 <h2>Histoire</h2>
+                <Link to="/histoire ">
                 <img src="./src/image/images/Luffy-Gear-5-One-Piece-removebg-preview.png" alt="Superposition" className="image-superposee" />
+                </Link>
               </div>
             </div>
 

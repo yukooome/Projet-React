@@ -31,7 +31,7 @@ import MangaSection from './components/MangaSection/MangaSection.jsx';  // Impor
 import Contact from './components/Contact/Contact.jsx'; // Import du composant Contact
 import Footer from './components/Footer/Footer.jsx';  // Import du composant Footer
 import Blog from './components/Blog/Blog.jsx';  // Import du composant Blog (ajoutez-le ici)
-
+import Histoire from './components/histoire/histoire.jsx';
 
 function App() {
   return (
@@ -43,6 +43,7 @@ function App() {
           <Route path="/manga" element={<MangaSection />} /> {/* Route pour la page Manga */}
           <Route path="/contacts" element={<Contact />} /> {/* Route pour la page Contact */}
           <Route path="/blog" element={<Blog />} /> {/* Route pour la page Blog */}
+          <Route path="/histoire" element={<Histoire />} />
         </Routes>
 
         <Footer /> {/* Footer en dehors des routes, car il doit être présent sur toutes les pages */}

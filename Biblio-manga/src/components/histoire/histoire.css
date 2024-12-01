@@ -1,0 +1,110 @@
+/* Styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* En-tête */
+.histoire-header {
+  height: 100vh;
+  background-image: url('./src/image/images/mangabgfull.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: rgba(9, 4, 38, 0.97);
+}
+
+.histoire-header-content {
+  text-align: center;
+  color: #ffffff;
+}
+
+.histoire-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.histoire-subtitle {
+  font-size: 1.5rem;
+  color: #f39c12;
+}
+
+/* Section principale */
+.histoire-main-section,
+.histoire-community-section {
+  padding: 60px 20px;
+  background-color: #090426;
+  color: #ffffff;
+}
+
+.histoire-main-section {
+  background-color: #090426;
+}
+
+.histoire-community-section {
+  background: linear-gradient(135deg, #090426, #3a1e68);
+}
+
+.histoire-section-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.histoire-section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.histoire-section-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.histoire-highlight {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+/* Appel à l'action */
+.histoire-call-to-action {
+  background-color: #3a1e68;
+  padding: 60px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.histoire-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.histoire-cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.histoire-cta-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.histoire-cta-button {
+  padding: 15px 30px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.histoire-cta-button:hover {
+  background-color: #e67e22;
+}
