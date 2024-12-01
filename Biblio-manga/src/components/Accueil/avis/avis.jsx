@@ -147,7 +147,7 @@ const CommunityReviews = () => {
 
   // Utilisation de useEffect pour changer le groupe d'avis toutes les 30 secondes
   useEffect(() => {
-    const interval = setInterval(changeGroup, 10000); // 10 secondes
+    const interval = setInterval(changeGroup, 5000); // 5 secondes
     return () => clearInterval(interval); // Nettoyage de l'intervalle lorsque le composant est démonté
   }, []);
 
