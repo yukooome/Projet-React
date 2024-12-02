@@ -6,7 +6,7 @@ const Histoire = () => {
   return (
     <div className="histoire">
       <Navbar />
-      {/* En-tête avec une couleur de fond unie */}
+      
       <header className="histoire-header">
         <div className="histoire-header-content">
           <h1 className="histoire-title">L'histoire derrière MangaKo</h1>
@@ -14,7 +14,7 @@ const Histoire = () => {
         </div>
       </header>
 
-      {/* Section principale expliquant l'origine du projet */}
+     
       <section className="histoire-main-section">
         <div className="histoire-section-content">
           <h2 className="histoire-section-title">Pourquoi MangaKo ?</h2>
@@ -27,7 +27,7 @@ const Histoire = () => {
         </div>
       </section>
 
-      {/* Section émotionnelle sur l'impact de la communauté */}
+      
       <section className="histoire-community-section">
         <div className="histoire-section-content">
           <h2 className="histoire-section-title">Une communauté qui grandit</h2>
@@ -40,7 +40,7 @@ const Histoire = () => {
         </div>
       </section>
 
-      {/* Section appel à l'action */}
+      
       <section className="histoire-call-to-action">
         <div className="histoire-cta-content">
           <h2 className="histoire-cta-title">Rejoignez l'aventure MangaKo</h2>
