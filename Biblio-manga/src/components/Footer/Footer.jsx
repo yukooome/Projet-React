@@ -12,7 +12,7 @@ function Footer() {
     <footer className="footer">
     <div className="footer-content">
       <div className="footer-section about">
-      <img src={"./src/image/Logo/logologo.png" } alt="MangaKo Logo" className="footer-logo" />
+      <img src={"./assets/image/Logo/logologo.png" } alt="MangaKo Logo" className="footer-logo" />
         <p>
           MangaKo est une plateforme qui vous permet de découvrir, trier, et organiser vos mangas préférés. Trouvez le manga parfait pour vous !
         </p>

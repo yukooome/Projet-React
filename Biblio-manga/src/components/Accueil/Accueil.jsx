@@ -21,23 +21,23 @@ import FeatureSection from '../Accueil/features/features'
 function Accueil() {
   // Insérer les personnages dans la partie top personnage du moment (top-perso)
   const personnages = [
-    { id: 1, src: './src/image/images/personnages-nana-removebg-preview.png', alt: 'Personnage 1' },
-    { id: 2, src: './src/image/images/Edward-removebg-preview.png', alt: 'Personnage 2' },
-    { id: 3, src: './src/image/images/gon-removebg-preview.png', alt: 'Personnage 3' },
-    { id: 4, src: './src/image/images/nrt-removebg-preview.png', alt: 'Personnage 4' },
+    { id: 1, src: './assets/image/images/personnages-nana-removebg-preview.png', alt: 'Personnage 1' },
+    { id: 2, src: './assets/image/images/Edward-removebg-preview.png', alt: 'Personnage 2' },
+    { id: 3, src: './assets/image/images/gon-removebg-preview.png', alt: 'Personnage 3' },
+    { id: 4, src: './assets/image/images/nrt-removebg-preview.png', alt: 'Personnage 4' },
   ];
 
   const interieurs = [
-    { id: 1, src: './src/image/images/death-note-personnage-removebg-preview.png', alt: 'Intérieur 1' },
-    { id: 2, src: './src/image/images/luffy-tete-removebg-preview.png', alt: 'Intérieur 2' },
-    { id: 3, src: './src/image/images/hinata-removebg-preview.png', alt: 'Intérieur 3' },
-    { id: 4, src: './src/image/images/One-Punch-Man-saison-2-removebg-preview.png', alt: 'Intérieur 4' },
+    { id: 1, src: './assets/image/images/death-note-personnage-removebg-preview.png', alt: 'Intérieur 1' },
+    { id: 2, src: './assets/image/images/luffy-tete-removebg-preview.png', alt: 'Intérieur 2' },
+    { id: 3, src: './assets/image/images/hinata-removebg-preview.png', alt: 'Intérieur 3' },
+    { id: 4, src: './assets/image/images/One-Punch-Man-saison-2-removebg-preview.png', alt: 'Intérieur 4' },
   ];
 
   // Insérer les manga dans la partie top manga du moment (top-manga)
   const manga = [
-    { id: 1, src: './src/image/images/op-test.jpeg', alt: 'Personnage 1' },
-    { id: 2, src: './src/image/images/Dandadan.jpeg', alt: 'Personnage 2' },
+    { id: 1, src: './assets/image/images/op-test.jpeg', alt: 'Personnage 1' },
+    { id: 2, src: './assets/image/images/Dandadan.jpeg', alt: 'Personnage 2' },
   ];
 
   return (
@@ -114,7 +114,7 @@ function Accueil() {
               <div className='nb1'>
                 <h2>Histoire</h2>
                 <Link to="/histoire ">
-                <img src="./src/image/images/Luffy-Gear-5-One-Piece-removebg-preview.png" alt="Superposition" className="image-superposee" />
+                <img src="./assets/image/images/Luffy-Gear-5-One-Piece-removebg-preview.png" alt="Superposition" className="image-superposee" />
                 </Link>
               </div>
             </div>
@@ -124,7 +124,7 @@ function Accueil() {
                 <h2>Blog</h2>
                 <Link to="/blog">
                   <img 
-                    src="./src/image/images/nauto-removebg-preview.png" 
+                    src="./assets/image/images/nauto-removebg-preview.png" 
                     alt="Superposition" 
                     className="image-superposee2" 
                   />
@@ -197,19 +197,19 @@ function Accueil() {
               <h4>Découvrez nos mangas populaires</h4>
               <div className='suggestion-images'>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/One-piece-anime-water_seven-arc.jpg' alt='Manga Populaire 1' />
+                  <img src='./assets/image/images/One-piece-anime-water_seven-arc.jpg' alt='Manga Populaire 1' />
                   <div className='image-overlay'>
                     <p>One Piece</p>
                   </div>
                 </div>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/naruto-team-7.jpeg' alt='Manga Populaire 2' />
+                  <img src='./assets/image/images/naruto-team-7.jpeg' alt='Manga Populaire 2' />
                   <div className='image-overlay'>
                     <p>Naruto</p>
                   </div>
                 </div>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/Attaque_des_titans_deco_720x.png.webp' alt='Manga Populaire 3' />
+                  <img src='./assets/image/images/Attaque_des_titans_deco_720x.png.webp' alt='Manga Populaire 3' />
                   <div className='image-overlay'>
                     <p>Attack on Titan</p>
                   </div>
@@ -226,19 +226,19 @@ function Accueil() {
               <h4>Jeux à découvrir</h4>
               <div className='suggestion-images'>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/dbzfigter.jpeg' alt='Jeu 1' />
+                  <img src='./assets/image/images/dbzfigter.jpeg' alt='Jeu 1' />
                   <div className='image-overlay'>
                     <p>Dragon Ball FighterZ</p>
                   </div>
                 </div>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/TheWitcher3.webp' alt='Jeu 2' />
+                  <img src='./assets/image/images/TheWitcher3.webp' alt='Jeu 2' />
                   <div className='image-overlay'>
                     <p>The Witcher 3</p>
                   </div>
                 </div>
                 <div className='suggestion-image'>
-                  <img src='./src/image/images/FF_XV_cover.jpg' alt='Jeu 3' />
+                  <img src='./assets/image/images/FF_XV_cover.jpg' alt='Jeu 3' />
                   <div className='image-overlay'>
                     <p>Final Fantasy XV</p>
                   </div>
@@ -254,11 +254,11 @@ function Accueil() {
               <h4>Actualités à ne pas manquer</h4>
               <div className='suggestion-news'>
                 <div className='news-item'>
-                  <img src='./src/image/images/article-1.jpg' alt='Article 1' />
+                  <img src='./assets/image/images/article-1.jpg' alt='Article 1' />
                   <p className='news-title'>Les dernières tendances dans l'univers du manga</p>
                 </div>
                 <div className='news-item'>
-                  <img src='./src/image/images/article-2.jpg' alt='Article 2' />
+                  <img src='./assets/image/images/article-2.jpg' alt='Article 2' />
                   <p className='news-title'>Les nouveaux jeux vidéo adaptés de mangas à découvrir</p>
                 </div>
               </div>
