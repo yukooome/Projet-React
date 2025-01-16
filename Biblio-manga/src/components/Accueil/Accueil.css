@@ -8,7 +8,7 @@
 /* HEADER */
 .header {
   height: 100vh; 
-  background-image: url('./assets/image/images/mangabgfull.jpeg');
+  background-image: url('./src/image/images/mangabgfull.jpeg');
   background-size: cover; /* Pour couvrir toute la div */
   background-position: center; /* Centrer l'image */
   background-blend-mode: overlay; /* Mélanger l'image et la couleur */
