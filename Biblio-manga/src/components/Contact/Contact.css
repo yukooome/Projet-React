@@ -1,6 +1,6 @@
 
 .first-cont-contact {
-    background-image: url('./assets/image/images/img-background-fume.jpg'); /* Chemin d'accès à l'image */
+    background-image: url('/assets/image/images/img-background-fume.jpg'); /* Chemin d'accès à l'image */
     background-size: cover; /* Pour couvrir toute la zone du conteneur */
     background-position: center; /* Pour centrer l'image */
     background-repeat: no-repeat; /* Pour éviter la répétition de l'image */

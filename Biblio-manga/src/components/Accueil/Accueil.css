@@ -358,7 +358,7 @@
   border-radius: 30px; 
 
 
-  background-image: url('./assets/image/images/shueishagamestitre.jpg');
+  background-image: url('/assets/image/images/shueishagamestitre.jpg');
   background-size: cover; 
   background-position: center; 
   background-blend-mode: overlay; 
