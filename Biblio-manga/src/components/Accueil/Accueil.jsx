@@ -101,7 +101,7 @@ function Accueil() {
                 <h3>Bienvenue chez MangaKo</h3>
               </div>
               <div className='img-actu'>
-                <img src="./src/image/images/img-fullperso-actu.jpg" alt="img-fullperso-actu" />
+                <img src="./assets/image/images/img-fullperso-actu.jpg" alt="img-fullperso-actu" />
               </div>
             </div>
 
