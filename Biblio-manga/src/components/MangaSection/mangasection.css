@@ -211,7 +211,7 @@
     width: 40%; 
     height: 100%;
     /* background-color: #f39c12;  */
-    background-image: url('./assets/image/images/lire-bd-japonaises.jpg');
+    background-image: url('/assets/image/images/lire-bd-japonaises.jpg');
 
     background-blend-mode: overlay; /* Mélanger l'image et la couleur */
     background-color: rgba(9, 4, 38, 0.774); 
