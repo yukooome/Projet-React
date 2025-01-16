@@ -8,7 +8,7 @@
 /* HEADER */
 .header {
   height: 100vh; 
-  background-image: url('./src/image/images/mangabgfull.jpeg');
+  background-image: url('assets/image/images/mangabgfull.jpeg');
   background-size: cover; /* Pour couvrir toute la div */
   background-position: center; /* Centrer l'image */
   background-blend-mode: overlay; /* Mélanger l'image et la couleur */
@@ -358,7 +358,7 @@
   border-radius: 30px; 
 
 
-  background-image: url('./src/image/images/shueishagamestitre.jpg');
+  background-image: url('./assets/image/images/shueishagamestitre.jpg');
   background-size: cover; 
   background-position: center; 
   background-blend-mode: overlay; 
