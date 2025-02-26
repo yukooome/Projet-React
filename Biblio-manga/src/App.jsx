@@ -7,6 +7,7 @@
 // import Contact from './components/Contact/Contact.jsx'; // Import du composant Contact
 // import Footer from './components/Footer/Footer.jsx';  // Import du composant Footer
 
+
 // function App() {
 //   return (
 //     <div className="App">
